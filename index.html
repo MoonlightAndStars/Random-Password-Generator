@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strong Password Generator</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate a <br /><span> Random Password !</span></h1>
+      <div class="display">
+        <input type="text" id="password" placeholder="Password" />
+        <img src="styles/images/copy-icon.svg" alt="copy-icon" title="Copy Password" onclick="copyPassword()" />
+        <img src="styles/images/reset-icon.svg" alt="reset-password" title="Reset Password" onclick="resetPassword()" />
+      </div>
+      <div class="buttons-container">
+        <button type="button" class="active" id="easy-password" title="Click here for easy password">
+          Easy Password
+        </button>      
+        <button type="button" class="active" id="medium-password" title="Click here for medium password">
+          Medium Password
+        </button>      
+        <button type="button" class="active" id="difficult-password" title="Click here for difficult password">
+          Strong Password
+        </button>
+      </div>
+      <div class="options-tab" id="tab-content">
+        <ul>
+        <li>Gneretate passwords at one click. Like it, Simply copy it and use it.</li>
+        <li>Want something different - Simply click on the generate button again.</li>
+        <li>Choose the password levels as per your own convenience.</li>
+        <li>We do not store any of your information.</li>
+        </ul>
+      </div>
+      <button id="generate" onclick="createPassword()">
+        <img src="styles/images/generate-password.svg" alt="password-icon">
+        Generate Password
+      </button>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

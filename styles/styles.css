@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #002329;
+    color: #fff;
+}
+
+.container {
+    margin: 12%;
+    margin-top: 3%;
+    width: 90%;
+    max-width: 700px;
+}
+
+.display {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 30px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;
+}
+
+.display img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    width: calc(100% - 100px); 
+}
+
+.container button img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.container button {
+    border: 0;
+    outline: 0;
+    background: #019f55;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons button {
+    display: inline-flex;
+    background: #a2d614;
+    margin: 5px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.buttons-container button {
+    width: calc(33.33% - 10px);
+    padding: 16px;
+    border: 0;
+    outline: 0;
+    background: #116e92;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.2s ease-out;
+    margin: 5px;
+}
+
+
+.buttons-container button:not(.active) {
+    opacity: 0.5;
+    background: #0af0c9;
+}
+
+.buttons-container button:hover {
+    transform: scale(0.9);
+    background: #0af0c9;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+.options-tab {
+    margin-top: 30px;
+    height: 32vh;
+    border-radius: 20px;
+    opacity: 0.35;
+    padding: 5px;
+}
+
+
+.options-tab li {
+    color: white;
+    font-size: 1rem;
+    list-style: none;
+    padding: 5px 10px;
+    margin: 0.4rem 0;
+    font-weight: 500;
+}
+
+.options-tab:hover {
+    background: #16ac93;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+#generate {
+    margin-top: 15px;
+    width: 100%;
+    background: #019f55;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+#generate:hover {
+    background: #18c784;
+    filter: drop-shadow(0 0 10px #65db36);
+    transition: 0.3s ease-in-out;
+}
